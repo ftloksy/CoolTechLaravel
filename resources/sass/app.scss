@@ -1,0 +1,231 @@
+
+$main-red: #e50914;
+$white: #fff;
+$copyright-background: #586673; //darkblue
+$copyright-text: #8b8b93; //lightblue
+$icon-text: #9acefe; //blue
+$icon-background: #c8996b;
+
+@font-face {
+    font-family: AntonRegular;
+    src: url(/fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensedRegular;
+    src: url(/fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensedLight;
+    src: url(/fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensedLightItalic;
+    src: url(/fonts/RobotoCondensed-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: DancingScriptSemiBold;
+    src: url(/fonts/static/DancingScript-SemiBold.ttf);
+}
+
+.logo-font {
+    @extend .big-title;
+    font-family: AntonRegular; 
+}
+
+.bold-med-font {
+    font-size:1.325rem;
+    font-weight:400;
+}
+
+.icon-font {
+  @extend .bold-med-font;
+      font-family: DancingScriptBold;
+}
+
+
+.big-title {
+    font-size:3.125rem;
+    line-height:1.1;
+    margin-bottom:.5rem;
+    font-family: DancingScriptSemiBold;
+}
+
+.small-title {
+    font-weight:400;
+    font-size:1rem;
+    margin:0 auto;
+}
+
+body {
+    direction: ltr;
+    font-size: 16px;
+    color: #333;
+    background: #000;
+}
+
+header {
+    display: block;
+    background: url(/images/layout/header.jpg);
+    height: 250px;
+}
+
+object.logo {
+    height: 100px;
+    width: 200px;
+    padding-top: .5rem;
+    padding-left: 2.5rem;
+    fill: $main-red;
+    line-height: normal;
+}
+
+span.logo-title {
+    position: relative;
+    top: -15px;
+    left: 10px;
+    @extend .logo-font;
+    color: $main-red;
+}
+
+footer {
+    display: block;
+    background: url(/images/layout/footer.jpg);
+    height: 250px;
+}
+
+copyright {
+    text-align: center;
+    display: block;
+    color: $white;
+    @extend .small-title;
+    width: fit-content;
+    background: black;
+    border: 5px solid $copyright-background;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+follow-me {
+    text-align: right;
+    display: block;
+    position: relative;
+    bottom: -150px;
+
+    h2 {
+        color: $copyright-text;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+}
+
+navbar {
+    display: block;
+    position: relative;
+    min-width: 100%;
+    right: 20px;
+    bottom: -80px;
+    text-align: right;
+    
+    nav {
+        display: inline;
+        
+        a {
+            color: $icon-text;
+            padding: 10px;
+            @extend .icon-font;
+            cursor: pointer;
+        }
+        
+        a:hover {
+            color: $icon-background;
+        }
+    }
+
+}
+
+/* left side drop-down menu */
+#menu {
+      background-color: #024;
+      position: relative;
+      color: white;
+      width: 250px;
+      padding-left: 40px;
+      padding-bottom: 80px;
+    
+    /* drop-down menu title */
+    .menutitle {
+      font-size: 20px;
+      padding-top: 10px;
+    }
+    
+    /* hover cover content in drop-down menu */
+    .menucontent {
+      display: none;
+      padding: 20px;
+      
+      a:hover {
+        color: $icon-background;
+      }
+    }
+    
+    .menua {
+        color: #ddd;
+    }
+
+}
+
+
+div#page {display: flex;flex-direction: row;}
+
+div#content {
+    color: #ddd;
+    font-size: 24px;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    a {
+        color: #ddd;
+    }
+    
+    a:hover {
+        color: $icon-background;
+    }
+}
+
+div.artcle_content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #120;
+}
+
+div.artcleheader {
+    h3 {
+        display: block;
+        font-family: RobotoCondensedLightItalic;
+        padding-left: 20px;
+    }
+    
+    h1 {
+        display: block;
+        font-family: RobotoCondensedLight;
+    }
+    
+    .artclecreater {
+        font-family: DancingScriptBold;
+    }
+}
+
+
+span.readall {
+    padding-right: 35px;
+}
+
+informationlink {
+    font-size: 16px;
+}
+
